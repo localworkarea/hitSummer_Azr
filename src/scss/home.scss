@@ -6,6 +6,7 @@
 	// .sec-first__container
 	&__container {
    @extend %section;
+   @include adaptiveValue("padding-left", 90, 50,2,1920,850.98);
 	}
 	// .sec-first__body
 	&__body {

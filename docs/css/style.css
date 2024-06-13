@@ -435,6 +435,9 @@ body {
   }
 }
 @media (min-width:120em) {
+  .sec-first__container {
+    padding-left: 5.625rem
+  }
   .sec-first__body {
     max-width: 51.875rem
   }
@@ -713,6 +716,18 @@ body {
   @supports not (height:clamp(5rem ,4.6607082393rem + 1.1286681716vw ,5.625rem)) {
     .video-youtube__button::before {
       height: calc(5rem + .625 * (100vw - 30.06125rem)/ 55.375)
+    }
+  }
+}
+@media (min-width:53.18625em) and (max-width:120em) {
+  @supports (padding-left:clamp(3.125rem ,1.1349062693rem + 3.7417447756vw ,5.625rem)) {
+    .sec-first__container {
+      padding-left: clamp(3.125rem ,1.1349062693rem + 3.7417447756vw ,5.625rem)
+    }
+  }
+  @supports not (padding-left:clamp(3.125rem ,1.1349062693rem + 3.7417447756vw ,5.625rem)) {
+    .sec-first__container {
+      padding-left: calc(3.125rem + 2.5 * (100vw - 53.18625rem)/ 66.81375)
     }
   }
 }
